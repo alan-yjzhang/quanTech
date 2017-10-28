@@ -1,0 +1,542 @@
+{
+	"info": {
+		"name": "SMS",
+		"_postman_id": "a2ff767e-025c-6a00-6939-ae4018e9ed31",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login - teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Login&XMLType=Login&Mode=Save&LOGINUSERNAME=teacher123&LOGINPASSWORD=123456&APITYPE=mobile",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Login",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "Login",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Save",
+							"equals": true
+						},
+						{
+							"key": "LOGINUSERNAME",
+							"value": "teacher123",
+							"equals": true
+						},
+						{
+							"key": "LOGINPASSWORD",
+							"value": "123456",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login - parent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Login&XMLType=Login&Mode=Save&LOGINUSERNAME=prWangZh&LOGINPASSWORD=123456&APITYPE=mobile",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Login",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "Login",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Save",
+							"equals": true
+						},
+						{
+							"key": "LOGINUSERNAME",
+							"value": "prWangZh",
+							"equals": true
+						},
+						{
+							"key": "LOGINPASSWORD",
+							"value": "123456",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - Class list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Teacher&XMLType=TeacherStudent&Mode=Display&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Teacher",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "TeacherStudent",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Display",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - Class Homework",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Teacher&XMLType=HomeWork&Mode=Edit&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&CourseId=000052&VCCourseId=000052&VCSECTION=03&ISCHEDULEID=17316",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Teacher",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "HomeWork",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Edit",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "CourseId",
+							"value": "000052",
+							"equals": true
+						},
+						{
+							"key": "VCCourseId",
+							"value": "000052",
+							"equals": true
+						},
+						{
+							"key": "VCSECTION",
+							"value": "03",
+							"equals": true
+						},
+						{
+							"key": "ISCHEDULEID",
+							"value": "17316",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - Class Homework Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Teacher&XMLType=HomeWork&Mode=Edit&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&SELECTEDSCHEDULEID=17316&SELECTEDSHEETID=1&SELECTEDTASKID=1",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Teacher",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "HomeWork",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Edit",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "SELECTEDSCHEDULEID",
+							"value": "17316",
+							"equals": true
+						},
+						{
+							"key": "SELECTEDSHEETID",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "SELECTEDTASKID",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - Student List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Teacher&XMLType=TeacherStudent&Mode=Display&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&CourseId=000052&VCCourseId=000052&VCSECTION=03&ISCHEDULEID=17316",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Teacher",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "TeacherStudent",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Display",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "CourseId",
+							"value": "000052",
+							"equals": true
+						},
+						{
+							"key": "VCCourseId",
+							"value": "000052",
+							"equals": true
+						},
+						{
+							"key": "VCSECTION",
+							"value": "03",
+							"equals": true
+						},
+						{
+							"key": "ISCHEDULEID",
+							"value": "17316",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - Student Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=Home&XMLType=TeacherStudentInfo&Mode=Details&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&CSTUDENTID=004572378",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "Home",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "TeacherStudentInfo",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Details",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "CSTUDENTID",
+							"value": "004572378",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=SysAdmin&XMLType=PortalUserPreferences&Mode=Edit&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&Password=1",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "SysAdmin",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "PortalUserPreferences",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Edit",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "Password",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - Profile Update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://greenoak/SMSportal/XPage.aspx?Module=SysAdmin&XMLType=PortalUserPreferences&Mode=Save&APITYPE=mobile&SessionID=3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d&VCOLDPASSWORD=&VCNEWPASSWORD&VCCONFIRMPASSWORD&VCPHONE=1234567&VCEMAILADDRESS1=123@123.com",
+					"protocol": "http",
+					"host": [
+						"greenoak"
+					],
+					"path": [
+						"SMSportal",
+						"XPage.aspx"
+					],
+					"query": [
+						{
+							"key": "Module",
+							"value": "SysAdmin",
+							"equals": true
+						},
+						{
+							"key": "XMLType",
+							"value": "PortalUserPreferences",
+							"equals": true
+						},
+						{
+							"key": "Mode",
+							"value": "Save",
+							"equals": true
+						},
+						{
+							"key": "APITYPE",
+							"value": "mobile",
+							"equals": true
+						},
+						{
+							"key": "SessionID",
+							"value": "3qkfUeCo2XjKw2vd5v%2fSYoVhRtJMtoKMGHFwJ35CPdE%3d",
+							"equals": true
+						},
+						{
+							"key": "VCOLDPASSWORD",
+							"value": "",
+							"equals": true
+						},
+						{
+							"key": "VCNEWPASSWORD",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "VCCONFIRMPASSWORD",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "VCPHONE",
+							"value": "1234567",
+							"equals": true
+						},
+						{
+							"key": "VCEMAILADDRESS1",
+							"value": "123@123.com",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
