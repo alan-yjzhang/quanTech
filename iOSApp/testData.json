@@ -1,0 +1,101 @@
+{
+    
+    "Person":{
+        "Name": "大白鲸",
+        "SystemId":"12345667",
+        "School":"经纬学校",
+        "ClassNo":"高一六班",
+        "Profession":"教师",
+        "Region":"山西晋中",
+        "WeChat":"2394713452",
+        "CellPhone":"13804953486",
+        "QQ":"1294359035",
+        "Email":"myemail@qq.com",
+        "Image":"Person_image",
+        "SelfDescription":"简介：是一位头很方的老师",
+        "PrimaryColor":"",
+    },
+    "HomePage": {
+        "HeaderNews": [
+                       {
+                       "Title":"今日学校新闻",
+                       "Image":"school_image1.jpg",
+                       "Message":"蓝天学校被评为省优秀学校",
+                       "MessageDetail": "记者：刘老师",
+                       "FollowUrl":"http://www.school.com",
+                       },
+                       {
+                       "Title":"通知",
+                       "Image":"school_gym.jpg",
+                       "Message":"本月有体育竞赛",
+                       "MessageDetail": "负责人：袁老师",
+                       "FollowUrl":"http://www.school.com",
+                       },
+                       {
+                       "Title":"学校联谊户外活动",
+                       "Image":"school_image2.jpg",
+                       "Message":"活动日期 9月30日",
+                       "MessageDetail": "联系人：方老师",
+                       "FollowUrl":"http://www.sina.com.cn",
+                       }
+                    ],
+        "Announcements": [
+                          {"Title": "今天放假", "Date" : "3/1/2017", "Detail":"清明节放假","image":"icon_stop"},
+                          {"Title": "周二放假", "Date" : "3/10/2017", "Detail" : "学校大扫除","image":"icon_tennis"},
+                          {"Title": "英语考试", "Date" : "3/12/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "作文比赛", "Date" : "3/14/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "体育竞赛", "Date" : "3/12/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "自由活动", "Date" : "3/15/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "考试复习", "Date" : "3/18/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "自由活动", "Date" : "3/15/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "考试复习", "Date" : "4/18/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "自由活动", "Date" : "4/15/2017", "Detail" : "", "image":"icon_track"},
+                          {"Title": "考试复习", "Date" : "4/18/2017", "Detail" : "", "image":"icon_track"},
+                          ],
+        
+        
+        "SchoolActivities": [
+                        {"Title": "今天放假", "Date" : "3/1/2017", "Detail":"清明节放假","image":"icon_stop"},
+                        {"Title": "周二放假", "Date" : "3/10/2017", "Detail" : "学校大扫除","image":"icon_tennis"},
+                        {"Title": "周四考试", "Date" : "3/12/2017", "Detail" : "", "image":"icon_track"}
+                             ],
+        "SchoolReports": [
+                          {"Title": "今天放假", "Date" : "3/1/2017", "Detail":"清明节放假","image":"icon_stop"},
+                          {"Title": "周二放假", "Date" : "3/10/2017", "Detail" : "学校大扫除","image":"icon_tennis"},
+                          {"Title": "周四考试", "Date" : "3/12/2017", "Detail" : "", "image":"icon_track"}
+                          ],
+    },
+    "CourseList":[
+        {"Title": "语文", "Date" : "12/1/2016", "Detail" : "", "image":"course_1"},
+        {"Title": "英语", "Date" : "12/18/2016", "Detail" : "", "image":"course_2"},
+        {"Title": "数学", "Date" : "12/24/2016", "Detail" : "", "image":"course_3"},
+        {"Title": "物理", "Date" : "12/26/2016", "Detail" : "", "image":"course_4"},
+        {"Title": "化学", "Date" : "12/30/2016", "Detail" : "", "image":"course_5"},
+        {"Title": "历史", "Date" : "12/30/2016", "Detail" : "", "image":"course_6"},
+        {"Title": "体育", "Date" : "12/30/2016", "Detail" : "", "image":"course_7"},
+        {"Title": "地理", "Date" : "12/30/2016", "Detail" : "", "image":"course_8"},
+    ],
+    "ClassActivity":[
+        {"Title": "作业 1", "Date" : "12/1/2016", "Detail" : "", "image":"icon_check"},
+        {"Title": "问题解答", "Date" : "12/26/2016", "Detail" : "", "image":"icon_check"},
+        {"Title": "课堂PPT", "Date" : "12/30/2016", "Detail" : "", "image":"icon_check"},
+        {"Title": "期中考试时间", "Date" : "12/18/2016", "Detail" : "", "image":"icon_check"},
+        {"Title": "期末考试时间", "Date" : "12/24/2016", "Detail" : "", "image":"icon_check"},
+    ],
+    "ScoreList":[
+                     {"Title": "语文","Type": "期末考试", "Date" : "12/1/2016", "Detail" : "93/100 优秀", "image":"icon_book"},
+                     {"Title": "英语","Type": "期末考试", "Date" : "12/26/2016", "Detail" : "93/100 优秀", "image":"icon_polls"},
+                     {"Title": "数学","Type": "期末考试", "Date" : "12/30/2016", "Detail" : "93/100 优秀", "image":"icon_scores"},
+                     {"Title": "化学","Type": "期末考试", "Date" : "12/18/2016", "Detail" : "93/100 优秀", "image":"icon_tv_coverage"},
+                     {"Title": "体育","Type": "期末考试", "Date" : "12/24/2016", "Detail" : "93/100 优秀", "image":"icon_seating"},
+    ],
+    "MenuList":[
+                {"Title":"主页", "image":"icon_home", "link":""},
+                {"Title":"日历", "image":"icon_cal", "link":""},
+                {"Title":"通知", "image":"icon_news", "link":""},
+                {"Title":"课程表", "image":"icon_cal_cells", "link":""},
+                {"Title":"课程动态", "image":"icon_book", "link":""},
+                {"Title":"成绩列表", "image":"icon_all_star", "link":""},
+                {"Title":"设置", "image":"icon_edit", "link":""}
+    ]
+}

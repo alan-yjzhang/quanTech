@@ -1,0 +1,54 @@
+{
+    "logging": "true",
+    "defaultRoute": {
+        "storyboard": {
+            "iPhone" : "Main",
+            "iPad" : "Main"
+        },
+        "class": "HomeViewController",
+        "identifier": "HomeViewController"
+    },
+    "routes": {
+        "CourseList" : {
+            "storyboard": {
+                "iPhone" : "Main",
+                "iPad" : "Main"
+            },
+            "identifier": "CourseListViewController"
+        },
+        "ClassActivity" : {
+            "storyboard": {
+                "iPhone" : "Main",
+                "iPad" : "Main"
+            },
+            "identifier": "ClassActivityViewController"
+        },
+        "CourseList/:courseId": {
+            "storyboard": {
+                "iPhone" : "Main",
+                "iPad" : "Main"
+            },
+            "identifier": "CourseListViewController",
+            "handlers": ["myHandler"],
+            "routeParameters": {
+                "courseId" : {
+                    "required" : "true"
+                },
+                "classURL": {
+                    "required": "true"
+                }
+            }
+        },
+        "testNib/:testId": {
+            "identifier": "ViewControllerWithNib",
+            "class": "ViewControllerWithNib",
+            "handlers": ["mutatorHandler", "myHandler"]
+        },
+        "testClass": {
+            "class": "NonIBViewController"
+        },
+        "handler": {
+            "handlers": ["routeToNonNibView"]
+        }
+    }
+}

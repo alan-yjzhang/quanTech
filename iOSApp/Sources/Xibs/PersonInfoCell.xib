@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonInfoCell" id="jw7-4v-gky" userLabel="PersonInfoCollectionViewCell" customClass="PersonInfoCell" customModule="eduDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_3x3" translatesAutoresizingMaskIntoConstraints="NO" id="Py1-EI-nZg">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="09I-15-cgo"/>
+                            <constraint firstAttribute="height" constant="44" id="8Mk-WM-nIl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-3r-bsI" userLabel="Name">
+                        <rect key="frame" x="49" y="8" width="331" height="27"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPl-OO-d8g" userLabel="detail">
+                        <rect key="frame" x="48" y="41" width="332" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cZN-3r-bsI" secondAttribute="trailing" constant="8" id="30v-vI-2zD"/>
+                <constraint firstItem="cZN-3r-bsI" firstAttribute="top" secondItem="Py1-EI-nZg" secondAttribute="top" id="Fe0-OK-dEq"/>
+                <constraint firstItem="UPl-OO-d8g" firstAttribute="leading" secondItem="cZN-3r-bsI" secondAttribute="leading" id="YVT-Zq-SKc"/>
+                <constraint firstItem="Py1-EI-nZg" firstAttribute="top" secondItem="jw7-4v-gky" secondAttribute="top" constant="3" id="g4x-tr-8aB"/>
+                <constraint firstAttribute="trailing" secondItem="UPl-OO-d8g" secondAttribute="trailing" constant="8" id="mQ0-ry-XJz"/>
+                <constraint firstItem="Py1-EI-nZg" firstAttribute="leading" secondItem="jw7-4v-gky" secondAttribute="leading" constant="3" id="oLU-gK-CSe"/>
+                <constraint firstItem="cZN-3r-bsI" firstAttribute="leading" secondItem="Py1-EI-nZg" secondAttribute="trailing" constant="2" id="ohA-TD-KPb"/>
+                <constraint firstItem="UPl-OO-d8g" firstAttribute="top" secondItem="cZN-3r-bsI" secondAttribute="bottom" constant="6" id="xoy-nF-20a"/>
+            </constraints>
+            <size key="customSize" width="388" height="90"/>
+            <connections>
+                <outlet property="personDetail" destination="UPl-OO-d8g" id="bOL-HE-0bi"/>
+                <outlet property="personImage" destination="Py1-EI-nZg" id="cuY-25-PAz"/>
+                <outlet property="personName" destination="cZN-3r-bsI" id="ZXT-yu-7p9"/>
+            </connections>
+            <point key="canvasLocation" x="83" y="74"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_3x3" width="32" height="32"/>
+    </resources>
+</document>
