@@ -12,7 +12,7 @@ import UIKit
 let kUserDefaultsUserAccount = "UserAccount"
 let kUserDefaultsUserPassword = "UserPassword"
 let kUserDefaultsServerAddr = "ServerAddress"
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var userAccount: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var serverAddr: UITextField!
@@ -53,7 +53,11 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userAccount.delegate = self
+        self.password.delegate = self
+        self.serverAddr.delegate = self
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.userAccount.text = self.savedUserAccount
@@ -61,6 +65,10 @@ class LoginViewController: UIViewController {
         self.serverAddr.text = self.savedServerAddr
     }
     @IBAction func loginButtonPressed(_ sender: Any) {
+        self.userAccount.resignFirstResponder()
+        self.password.resignFirstResponder()
+        self.serverAddr.resignFirstResponder()
+        
         self.savedUserAccount = self.userAccount.text
         self.savedUserPassword = self.password.text
         if serverAddr.text?.isEmpty == false {
