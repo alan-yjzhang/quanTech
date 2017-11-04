@@ -24,7 +24,8 @@ class SettingsViewController : LoadableDataViewController
     
     var person : Person? = nil
     override open func viewDidLoad() {
-        person = TestDataManager.sharedManager.person
+//        person = TestDataManager.sharedManager.person
+        person = SMSAPI.userProfile
         super.viewDidLoad()
     }
     
@@ -45,6 +46,17 @@ class SettingsViewController : LoadableDataViewController
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "设置", style: .plain, target: nil, action: nil)
 
         super.viewWillAppear(animated)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard SMSAPI.isLoggedIn() == true else {
+            let alert = UIAlertController(title: "系统错误", message: "请先登录", preferredStyle: .alert)
+            let OKAction = UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
+            })
+            alert.addAction(OKAction)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
     }

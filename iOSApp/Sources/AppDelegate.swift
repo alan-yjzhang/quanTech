@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainTabViewController : MainTabViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,10 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Test
         DeepLinkManager.test()
         
+        self.mainTabViewController = application.keyWindow?.rootViewController as? MainTabViewController
+        
 //        UITabBar.appearance().barTintColor = UIColor.init(hexString:"#2B75A2")
 //        UITabBar.appearance().tintColor = UIColor.blue
         
-        String.test()
+//        String.test()
+//        SMSBaseResponse.testSwiftySMLParser()
+        SMSAPI.testXMLData()
         return true
     }
 

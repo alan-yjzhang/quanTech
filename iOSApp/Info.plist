@@ -22,10 +22,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>eduDemo URL</string>
+			<string>quanTech URL</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>eduDemo</string>
+				<string>quanTech</string>
 			</array>
 		</dict>
 		<dict>
@@ -42,10 +42,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

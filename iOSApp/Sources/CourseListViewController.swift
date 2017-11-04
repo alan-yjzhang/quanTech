@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftyXMLParser
 class CourseListCell : UICollectionViewCell
 {
     @IBOutlet weak var courseName: UILabel!
@@ -22,8 +23,10 @@ class CourseListHeader : UICollectionReusableView
 
 class CourseListViewController: LoadableCollectionViewController, UICollectionViewDelegateFlowLayout
 {
-    var courseList : [[String:String]]? = nil
+    var courseList1 : [[String:String]]? = nil
+    var courseList : [Course]?
     var person : Person? = nil
+    var selectedCourse : Int = 0
     override func viewDidLoad() {
 //        self.loggingEnabled = true
 //        self.defaultLoadingUrl = "https://raw.githubusercontent.com/evermeer/AlamofireJsonToObjects/master/AlamofireJsonToObjectsTests/sample_json"
@@ -37,9 +40,59 @@ class CourseListViewController: LoadableCollectionViewController, UICollectionVi
 //                print(error)
 //            }
 //        }
+        #if TEST
         self.courseList = TestDataManager.sharedManager.courseList as? [[String:String]]
         person = TestDataManager.sharedManager.person
+        #else
+            person = SMSAPI.userProfile
+        #endif
         super.viewDidLoad()
+    }
+
+    func loadCourseList() {
+        guard SMSAPI.isLoggedIn() == true else {
+            let alert = UIAlertController(title: "系统错误", message: "请先登录", preferredStyle: .alert)
+            let OKAction = UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
+            })
+            alert.addAction(OKAction)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        SMSAPITeacher.sharedSMSTeacherAPI.getClassList { (xmlResponse , error) in
+            DispatchQueue.main.async {
+                guard error == nil else {
+                    let alert = UIAlertController(title: "系统错误", message: "无法获取课程表！", preferredStyle: .alert)
+                    let OKAction = UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
+                    })
+                    alert.addAction(OKAction)
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
+                self.courseList = [Course]()
+                let courseList = xmlResponse as! XML.Accessor
+                var courseIndex = 0
+                for courseXML in courseList["CLASS"] {
+                    //{"Title": "语文", "Date" : "12/1/2016", "Detail" : "", "image":"course_1"},
+                    let course = Course()
+                    course.title = courseXML["VCCOURSENAME"].text
+                    course.shortTitle = courseXML["VCSHORTNAME"].text
+                    course.iconName = Course.courseIconList[courseIndex]
+                    course.courseId = courseXML["VCCOURSEID"].text
+                    course.section = courseXML["VCSECTION"].text
+                    course.scheduleId = courseXML["ISCHEDULEID"].text
+                    course.schoolCode = courseXML["ISCHOOLCODE"].text
+                    course.teacherId = courseXML["ITEACHERID"].text
+                    course.teacherName = courseXML["VCTEACHERNAME"].text
+                    course.schoolName = courseXML["VCSCHOOLNAME"].text
+                    course.homeRoom = courseXML["VCHOMEROOM"].text
+                    course.credits = Int( Float(courseXML["VCCREDITS"].text ??  "0")! )
+                    course.studentNum = Int(Float(courseXML["INUMSTUDENTS"].text ?? "0")!)
+                    courseIndex = courseIndex + 1
+                    self.courseList?.append(course);
+                }
+                self.collectionView?.reloadData()
+            }
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.backgroundColor = UIColor.init(hexString:"#4396C9")
@@ -47,6 +100,7 @@ class CourseListViewController: LoadableCollectionViewController, UICollectionVi
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "课程动态", style: .plain, target: nil, action: nil)
         
         super.viewWillAppear(animated)
+        self.loadCourseList()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -78,8 +132,8 @@ class CourseListViewController: LoadableCollectionViewController, UICollectionVi
         let courseCell = collectionView.dequeueReusableCell(withReuseIdentifier: "courseListCell", for: indexPath) as! CourseListCell
         let course = self.courseList?[indexPath.row]
         
-        courseCell.courseName.text = course?["Title"]
-        if let imageName = course?["image"] {
+        courseCell.courseName.text = course?.title
+        if let imageName = course?.iconName {
             courseCell.courseImage.image = UIImage.init(named: imageName)
         }
         return courseCell
@@ -98,6 +152,15 @@ class CourseListViewController: LoadableCollectionViewController, UICollectionVi
             return super.collectionView(collectionView, viewForSupplementaryElementOfKind: kind, at: indexPath)
         }
     }
-    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedCourse = indexPath.item
+        self.performSegue(withIdentifier: "listStudents", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "listStudents" {
+            let vc = segue.destination as! CourseStudentListViewController
+            vc.courseInfo = self.courseList?[self.selectedCourse]
+        }
+    }
 }
 

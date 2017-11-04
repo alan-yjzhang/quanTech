@@ -71,8 +71,8 @@ class DeepLinkManager
     }
     class func test()
     {
-//        DeepLinkManager.sharedInstance.routeURL(URL.init(string: "eduDemo://CourseList")!)
-        DeepLinkManager.sharedInstance.routeURL(URL.init(string: "eduDemo://CourseList/1?x=2&y=3&z&classURL=http%3A%2F%2Fwww.google.com")!)
+//        DeepLinkManager.sharedInstance.routeURL(URL.init(string: "quanTech://CourseList")!)
+        DeepLinkManager.sharedInstance.routeURL(URL.init(string: "quanTech://CourseList/1?x=2&y=3&z&classURL=http%3A%2F%2Fwww.google.com")!)
     }
     open func loadConfig(_ fileName: String)
     {

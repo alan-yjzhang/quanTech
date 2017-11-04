@@ -12,7 +12,9 @@ class Person
 {
     var firstName : String?
     var lastName : String?
-    var fullName : String?
+    var fullName : String? {
+        return (lastName ?? "") + (firstName ?? "")
+    }
     var age : Int?
     var systemId : String?
     var profession : String?
@@ -32,6 +34,7 @@ class Person
         firstName = ""
         lastName = ""
         systemId = "No ID"
+        personIcon = UIImage.init(named: "Person_image")
     }
     convenience init(firstname:String, lastname:String, sysId:String){
         self.init()

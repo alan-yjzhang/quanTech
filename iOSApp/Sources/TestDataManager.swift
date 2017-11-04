@@ -37,7 +37,7 @@ class TestDataManager : NSObject
                     if let personInfo = self.personInfo {
                         self.person = Person()
                         self.person?.systemId = personInfo["SystemId"] as? String
-                        self.person?.fullName = personInfo["Name"] as? String
+                        self.person?.firstName = personInfo["Name"] as? String
                         self.person?.school  = personInfo["School"] as? String
                         self.person?.classRoom = personInfo["ClassNo"] as? String
                         self.person?.region = personInfo["Region"] as? String

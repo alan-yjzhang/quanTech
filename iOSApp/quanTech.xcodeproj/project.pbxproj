@@ -65,6 +65,16 @@
 		1620AB611FA532A300D8D534 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620AB551FA532A200D8D534 /* SwiftSpinner.swift */; };
 		1620AB621FA532A300D8D534 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1620AB581FA532A200D8D534 /* CSStickyHeaderFlowLayout.m */; };
 		1620AB631FA532A300D8D534 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1620AB5A1FA532A200D8D534 /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		163BD0711FA55ADE00E13ADD /* SMSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD0701FA55ADE00E13ADD /* SMSAPI.swift */; };
+		163BD0721FA7E0A600E13ADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D4DB871FA558CD0083C8C0 /* LoginViewController.swift */; };
+		163BD0741FA7E35000E13ADD /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD0731FA7E35000E13ADD /* MainTabViewController.swift */; };
+		167923A81FAE35870041EC52 /* CourseStudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167923A71FAE35870041EC52 /* CourseStudentListViewController.swift */; };
+		167923AA1FAE36BB0041EC52 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167923A91FAE36BB0041EC52 /* Course.swift */; };
+		167923AE1FAE46790041EC52 /* ScoreList2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167923AD1FAE46790041EC52 /* ScoreList2ViewController.swift */; };
+		16D4DB841FA54CA20083C8C0 /* SMSBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D4DB831FA54CA20083C8C0 /* SMSBaseResponse.swift */; };
+		16D4DB861FA54D370083C8C0 /* TestSwiftyXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D4DB851FA54D370083C8C0 /* TestSwiftyXMLParser.swift */; };
+		16F0EADD1FAA927000DD1149 /* testData1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 16F0EADC1FAA927000DD1149 /* testData1.xml */; };
+		16F0EADF1FAAA20900DD1149 /* SMSTeacherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F0EADE1FAAA20900DD1149 /* SMSTeacherAPI.swift */; };
 		1AA8425EC1A7FF008A178963 /* Pods_quanTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DEA31FDBE85A180CAD6F79 /* Pods_quanTech.framework */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +163,16 @@
 		1620AB591FA532A200D8D534 /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
 		1620AB5A1FA532A200D8D534 /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
 		1620AB641FA5343100D8D534 /* quanTech-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "quanTech-Bridging-Header.h"; sourceTree = "<group>"; };
+		163BD0701FA55ADE00E13ADD /* SMSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAPI.swift; sourceTree = "<group>"; };
+		163BD0731FA7E35000E13ADD /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		167923A71FAE35870041EC52 /* CourseStudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStudentListViewController.swift; sourceTree = "<group>"; };
+		167923A91FAE36BB0041EC52 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		167923AD1FAE46790041EC52 /* ScoreList2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreList2ViewController.swift; sourceTree = "<group>"; };
+		16D4DB831FA54CA20083C8C0 /* SMSBaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSBaseResponse.swift; sourceTree = "<group>"; };
+		16D4DB851FA54D370083C8C0 /* TestSwiftyXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftyXMLParser.swift; sourceTree = "<group>"; };
+		16D4DB871FA558CD0083C8C0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		16F0EADC1FAA927000DD1149 /* testData1.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testData1.xml; sourceTree = "<group>"; };
+		16F0EADE1FAAA20900DD1149 /* SMSTeacherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTeacherAPI.swift; sourceTree = "<group>"; };
 		43D552FEB0913FF6EBE4AFB0 /* Pods-quanTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanTech.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quanTech/Pods-quanTech.debug.xcconfig"; sourceTree = "<group>"; };
 		74DEA31FDBE85A180CAD6F79 /* Pods_quanTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quanTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C675F64FC4275F63A45B1075 /* Pods-quanTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanTech.release.xcconfig"; path = "Pods/Target Support Files/Pods-quanTech/Pods-quanTech.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +207,7 @@
 		1620AA5B1FA52E1800D8D534 = {
 			isa = PBXGroup;
 			children = (
+				16D4DB821FA54CA20083C8C0 /* SMSAPI */,
 				1620AAF41FA5319900D8D534 /* Sources */,
 				1620AB491FA531F100D8D534 /* LaunchScreen.storyboard */,
 				1620AB4A1FA531F200D8D534 /* Main.storyboard */,
@@ -196,6 +217,7 @@
 				1620AAFE1FA5319900D8D534 /* DeepLinkConfig.json */,
 				1620AB0F1FA5319900D8D534 /* rotate@2x.png */,
 				1620AB151FA5319900D8D534 /* testData.json */,
+				16F0EADC1FAA927000DD1149 /* testData1.xml */,
 				1620AB641FA5343100D8D534 /* quanTech-Bridging-Header.h */,
 				1620AB4D1FA532A200D8D534 /* AEXML */,
 				1620AB561FA532A200D8D534 /* CSStickyHeader */,
@@ -222,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				1620AA7E1FA52E1800D8D534 /* quanTechTests.swift */,
+				16D4DB851FA54D370083C8C0 /* TestSwiftyXMLParser.swift */,
 				1620AA801FA52E1800D8D534 /* Info.plist */,
 			);
 			path = quanTechTests;
@@ -257,6 +280,7 @@
 				1620AAF81FA5319900D8D534 /* BaseViewController.swift */,
 				1620AAF91FA5319900D8D534 /* ClassActivityViewController.swift */,
 				1620AAFA1FA5319900D8D534 /* CourseListViewController.swift */,
+				167923A71FAE35870041EC52 /* CourseStudentListViewController.swift */,
 				1620AAFB1FA5319900D8D534 /* CustomPresentationManager.swift */,
 				1620AAFC1FA5319900D8D534 /* CustomUIPresentationViewController.swift */,
 				1620AAFD1FA5319900D8D534 /* DataDownload.swift */,
@@ -273,15 +297,19 @@
 				1620AB0B1FA5319900D8D534 /* LoadableDataViewController.swift */,
 				1620AB0C1FA5319900D8D534 /* MainMenuListViewController.swift */,
 				1620AB0D1FA5319900D8D534 /* Person.swift */,
+				167923A91FAE36BB0041EC52 /* Course.swift */,
 				1620AB0E1FA5319900D8D534 /* PersonInfoCell.swift */,
 				1620AB101FA5319900D8D534 /* ScheduleViewController.swift */,
 				1620AB111FA5319900D8D534 /* ScoreListViewController.swift */,
+				167923AD1FAE46790041EC52 /* ScoreList2ViewController.swift */,
 				1620AB121FA5319900D8D534 /* SettingsViewController.swift */,
 				1620AB141FA5319900D8D534 /* TestBaseViewController.swift */,
 				1620AB161FA5319900D8D534 /* TestDataManager.swift */,
 				1620AB171FA5319900D8D534 /* TestWebViewController.swift */,
 				1620AB181FA5319900D8D534 /* UIAlertControllerExtension.swift */,
 				1620AB191FA5319900D8D534 /* URLUserAccess.swift */,
+				16D4DB871FA558CD0083C8C0 /* LoginViewController.swift */,
+				163BD0731FA7E35000E13ADD /* MainTabViewController.swift */,
 				1620AB1A1FA5319900D8D534 /* WebViewController.swift */,
 				1620AB1B1FA5319900D8D534 /* Xibs */,
 			);
@@ -324,6 +352,16 @@
 			);
 			name = CSStickyHeader;
 			path = 3rdParty/CSStickyHeader;
+			sourceTree = "<group>";
+		};
+		16D4DB821FA54CA20083C8C0 /* SMSAPI */ = {
+			isa = PBXGroup;
+			children = (
+				16D4DB831FA54CA20083C8C0 /* SMSBaseResponse.swift */,
+				163BD0701FA55ADE00E13ADD /* SMSAPI.swift */,
+				16F0EADE1FAAA20900DD1149 /* SMSTeacherAPI.swift */,
+			);
+			path = SMSAPI;
 			sourceTree = "<group>";
 		};
 		5AD7ED19C278440248ADE647 /* Frameworks */ = {
@@ -462,6 +500,7 @@
 				1620AB471FA5319900D8D534 /* HomeHeader2.xib in Resources */,
 				1620AAD71FA52F7B00D8D534 /* HomeHeader1.xib in Resources */,
 				1620AAD61FA52F7B00D8D534 /* HomeHeader.xib in Resources */,
+				16F0EADD1FAA927000DD1149 /* testData1.xml in Resources */,
 				1620AB481FA5319900D8D534 /* PersonInfoCell.xib in Resources */,
 				1620AB5E1FA532A300D8D534 /* Info.plist in Resources */,
 				1620AB3F1FA5319900D8D534 /* testData.json in Resources */,
@@ -542,11 +581,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163BD0721FA7E0A600E13ADD /* LoginViewController.swift in Sources */,
+				163BD0711FA55ADE00E13ADD /* SMSAPI.swift in Sources */,
 				1620AB401FA5319900D8D534 /* TestDataManager.swift in Sources */,
 				1620AB331FA5319900D8D534 /* LoadableCollectionViewController.swift in Sources */,
 				1620AB3E1FA5319900D8D534 /* TestBaseViewController.swift in Sources */,
 				1620AB2B1FA5319900D8D534 /* ExtensionString.swift in Sources */,
 				1620AB261FA5319900D8D534 /* CustomPresentationManager.swift in Sources */,
+				16F0EADF1FAAA20900DD1149 /* SMSTeacherAPI.swift in Sources */,
+				16D4DB841FA54CA20083C8C0 /* SMSBaseResponse.swift in Sources */,
+				167923AE1FAE46790041EC52 /* ScoreList2ViewController.swift in Sources */,
 				1620AB2F1FA5319900D8D534 /* ExtensionUIImageView.swift in Sources */,
 				1620AB271FA5319900D8D534 /* CustomUIPresentationViewController.swift in Sources */,
 				1620AB621FA532A300D8D534 /* CSStickyHeaderFlowLayout.m in Sources */,
@@ -560,10 +604,12 @@
 				1620AB3C1FA5319900D8D534 /* SettingsViewController.swift in Sources */,
 				1620AB201FA5319900D8D534 /* AppDelegate.swift in Sources */,
 				1620AB361FA5319900D8D534 /* MainMenuListViewController.swift in Sources */,
+				167923AA1FAE36BB0041EC52 /* Course.swift in Sources */,
 				1620AB2A1FA5319900D8D534 /* DeeplinkManager.swift in Sources */,
 				1620AB5C1FA532A300D8D534 /* Element.swift in Sources */,
 				1620AB251FA5319900D8D534 /* CourseListViewController.swift in Sources */,
 				1620AB611FA532A300D8D534 /* SwiftSpinner.swift in Sources */,
+				167923A81FAE35870041EC52 /* CourseStudentListViewController.swift in Sources */,
 				1620AB2D1FA5319900D8D534 /* ExtensionUIColor.swift in Sources */,
 				1620AB221FA5319900D8D534 /* AuthManager.swift in Sources */,
 				1620AB311FA5319900D8D534 /* HomeViewController.swift in Sources */,
@@ -574,6 +620,7 @@
 				1620AB5D1FA532A300D8D534 /* Error.swift in Sources */,
 				1620AB381FA5319900D8D534 /* PersonInfoCell.swift in Sources */,
 				1620AB371FA5319900D8D534 /* Person.swift in Sources */,
+				163BD0741FA7E35000E13ADD /* MainTabViewController.swift in Sources */,
 				1620AB631FA532A300D8D534 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				1620AB301FA5319900D8D534 /* HomeHeader.swift in Sources */,
 				1620AB351FA5319900D8D534 /* LoadableDataViewController.swift in Sources */,
@@ -588,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D4DB861FA54D370083C8C0 /* TestSwiftyXMLParser.swift in Sources */,
 				1620AA7F1FA52E1800D8D534 /* quanTechTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,7 +712,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -715,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
